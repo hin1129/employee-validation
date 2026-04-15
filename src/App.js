@@ -64,12 +64,25 @@ function App() {
           onChange={(e) => setJoiningDate(e.target.value)}
         />
 
+        {/* 2026-04-15T17:18:05.936Z */}
         {today}<br />
+
+        {/* 2026-04-1517:18:41.331Z */}
         {today.split("T")}<br />
+
+        {/* 2026-04-15 */}
         {today.split("T")[0]}<br />
+
+        {/* 17:18:54.165Z */}
         {today.split("T")[1]}<br />
+
+        {/* 17:18:54.165Z */}
         {Date.now()}<br />
+
+        {/* 1776297600000*/}
         {Date.parse(joiningDate)}<br />
+
+        {/* 2026-04-16 */}
         {joiningDate}
 
         {
